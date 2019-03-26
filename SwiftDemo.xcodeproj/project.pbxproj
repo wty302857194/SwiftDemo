@@ -10,8 +10,14 @@
 		C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */; };
 		C1FE6CB32248BE8D008B3C57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CB22248BE8D008B3C57 /* ViewController.swift */; };
 		C1FE6CB62248BE8D008B3C57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FE6CB42248BE8D008B3C57 /* Main.storyboard */; };
-		C1FE6CB82248BE90008B3C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1FE6CB72248BE90008B3C57 /* Assets.xcassets */; };
 		C1FE6CBB2248BE90008B3C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FE6CB92248BE90008B3C57 /* LaunchScreen.storyboard */; };
+		C1FE6CC72248C6BB008B3C57 /* TYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CC62248C6BB008B3C57 /* TYNavigationController.swift */; };
+		C1FE6CC92248C74E008B3C57 /* TYBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CC82248C74E008B3C57 /* TYBaseTabBarController.swift */; };
+		C1FE6CCB2248D448008B3C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1FE6CCA2248D448008B3C57 /* Assets.xcassets */; };
+		C1FE6CCD2248D496008B3C57 /* TYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CCC2248D496008B3C57 /* TYHomeViewController.swift */; };
+		C1FE6CCF2248D4AA008B3C57 /* TYMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CCE2248D4AA008B3C57 /* TYMineViewController.swift */; };
+		C1FE6CD12248D4BD008B3C57 /* TYVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CD02248D4BD008B3C57 /* TYVideoViewController.swift */; };
+		C1FE6CD42248D5A1008B3C57 /* TYHuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CD32248D5A1008B3C57 /* TYHuoshanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +25,15 @@
 		C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1FE6CB22248BE8D008B3C57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C1FE6CB52248BE8D008B3C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C1FE6CB72248BE90008B3C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1FE6CBA2248BE90008B3C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1FE6CBC2248BE90008B3C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1FE6CC62248C6BB008B3C57 /* TYNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYNavigationController.swift; sourceTree = "<group>"; };
+		C1FE6CC82248C74E008B3C57 /* TYBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYBaseTabBarController.swift; sourceTree = "<group>"; };
+		C1FE6CCA2248D448008B3C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1FE6CCC2248D496008B3C57 /* TYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYHomeViewController.swift; sourceTree = "<group>"; };
+		C1FE6CCE2248D4AA008B3C57 /* TYMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYMineViewController.swift; sourceTree = "<group>"; };
+		C1FE6CD02248D4BD008B3C57 /* TYVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYVideoViewController.swift; sourceTree = "<group>"; };
+		C1FE6CD32248D5A1008B3C57 /* TYHuoshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYHuoshanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,60 @@
 		C1FE6CAF2248BE8D008B3C57 /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C1FE6CC52248C666008B3C57 /* BaseVC */,
+				C1FE6CC22248C619008B3C57 /* home */,
+				C1FE6CC42248C630008B3C57 /* mine */,
+				C1FE6CC32248C627008B3C57 /* video */,
+				C1FE6CD22248D4C8008B3C57 /* Huoshan */,
 				C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */,
 				C1FE6CB22248BE8D008B3C57 /* ViewController.swift */,
 				C1FE6CB42248BE8D008B3C57 /* Main.storyboard */,
-				C1FE6CB72248BE90008B3C57 /* Assets.xcassets */,
 				C1FE6CB92248BE90008B3C57 /* LaunchScreen.storyboard */,
+				C1FE6CCA2248D448008B3C57 /* Assets.xcassets */,
 				C1FE6CBC2248BE90008B3C57 /* Info.plist */,
 			);
 			path = SwiftDemo;
+			sourceTree = "<group>";
+		};
+		C1FE6CC22248C619008B3C57 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				C1FE6CCC2248D496008B3C57 /* TYHomeViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		C1FE6CC32248C627008B3C57 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				C1FE6CD02248D4BD008B3C57 /* TYVideoViewController.swift */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		C1FE6CC42248C630008B3C57 /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				C1FE6CCE2248D4AA008B3C57 /* TYMineViewController.swift */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		C1FE6CC52248C666008B3C57 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				C1FE6CC62248C6BB008B3C57 /* TYNavigationController.swift */,
+				C1FE6CC82248C74E008B3C57 /* TYBaseTabBarController.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		C1FE6CD22248D4C8008B3C57 /* Huoshan */ = {
+			isa = PBXGroup;
+			children = (
+				C1FE6CD32248D5A1008B3C57 /* TYHuoshanViewController.swift */,
+			);
+			path = Huoshan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +148,7 @@
 		C1FE6CA52248BE8D008B3C57 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TY;
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = cjh;
@@ -123,7 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1FE6CBB2248BE90008B3C57 /* LaunchScreen.storyboard in Resources */,
-				C1FE6CB82248BE90008B3C57 /* Assets.xcassets in Resources */,
+				C1FE6CCB2248D448008B3C57 /* Assets.xcassets in Resources */,
 				C1FE6CB62248BE8D008B3C57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1FE6CCD2248D496008B3C57 /* TYHomeViewController.swift in Sources */,
+				C1FE6CD12248D4BD008B3C57 /* TYVideoViewController.swift in Sources */,
+				C1FE6CD42248D5A1008B3C57 /* TYHuoshanViewController.swift in Sources */,
 				C1FE6CB32248BE8D008B3C57 /* ViewController.swift in Sources */,
+				C1FE6CCF2248D4AA008B3C57 /* TYMineViewController.swift in Sources */,
+				C1FE6CC72248C6BB008B3C57 /* TYNavigationController.swift in Sources */,
 				C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */,
+				C1FE6CC92248C74E008B3C57 /* TYBaseTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
