@@ -1,5 +1,5 @@
 //
-//  TYHuoshanViewController.swift
+//  TYMineViewController.swift
 //  SwiftDemo
 //
 //  Created by wbb on 2019/3/25.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class TYHuoshanViewController: UIViewController {
+class TYMineViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
     }
     

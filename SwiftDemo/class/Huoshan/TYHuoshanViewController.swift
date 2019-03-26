@@ -1,5 +1,5 @@
 //
-//  TYVideoViewController.swift
+//  TYHuoshanViewController.swift
 //  SwiftDemo
 //
 //  Created by wbb on 2019/3/25.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class TYVideoViewController: UIViewController {
+class TYHuoshanViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
     }
     

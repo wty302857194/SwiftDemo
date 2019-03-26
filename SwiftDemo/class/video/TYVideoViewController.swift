@@ -1,5 +1,5 @@
 //
-//  TYHomeViewController.swift
+//  TYVideoViewController.swift
 //  SwiftDemo
 //
 //  Created by wbb on 2019/3/25.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class TYHomeViewController: UIViewController {
+class TYVideoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
     }
     
