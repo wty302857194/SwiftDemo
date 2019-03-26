@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A5337CC9D5ED6B22974B47C /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8312B12A00E517BB474FA7 /* Pods_SwiftDemo.framework */; };
+		C101FB19224A220C00AEDB3E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB18224A220C00AEDB3E /* Const.swift */; };
+		C101FB1C224A22C600AEDB3E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB1B224A22C600AEDB3E /* UIColor+Extension.swift */; };
 		C105467C2249FEC9000FF552 /* TYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105467B2249FEC9000FF552 /* TYTabBar.swift */; };
 		C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */; };
 		C1FE6CBB2248BE90008B3C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FE6CB92248BE90008B3C57 /* LaunchScreen.storyboard */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		1CE1D32E44583B4BBA82C460 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		99100E45AFF3ED1B06F65ECE /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C101FB18224A220C00AEDB3E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		C101FB1B224A22C600AEDB3E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		C105467B2249FEC9000FF552 /* TYTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYTabBar.swift; sourceTree = "<group>"; };
 		C1FE6CAD2248BE8D008B3C57 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,14 @@
 			path = class;
 			sourceTree = "<group>";
 		};
+		C101FB1A224A228200AEDB3E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C101FB1B224A22C600AEDB3E /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		C1FE6CA42248BE8D008B3C57 = {
 			isa = PBXGroup;
 			children = (
@@ -91,11 +103,13 @@
 		C1FE6CAF2248BE8D008B3C57 /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C101FB1A224A228200AEDB3E /* Extension */,
 				C101FB17224A15C100AEDB3E /* class */,
 				C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */,
 				C1FE6CB92248BE90008B3C57 /* LaunchScreen.storyboard */,
 				C1FE6CCA2248D448008B3C57 /* Assets.xcassets */,
 				C1FE6CBC2248BE90008B3C57 /* Info.plist */,
+				C101FB18224A220C00AEDB3E /* Const.swift */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -252,6 +266,8 @@
 				C1FE6CC72248C6BB008B3C57 /* TYNavigationController.swift in Sources */,
 				C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */,
 				C1FE6CC92248C74E008B3C57 /* TYBaseTabBarController.swift in Sources */,
+				C101FB19224A220C00AEDB3E /* Const.swift in Sources */,
+				C101FB1C224A22C600AEDB3E /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
