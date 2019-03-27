@@ -10,11 +10,25 @@ import UIKit
 
 class TYMineViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+     var sectionsArr = [[MineModel]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+       
         
         view.addSubview(tableView)
+        
+        NetWorkTool.mineRequestData { (sections) in
+            let jsonString = "{\"text\":\"我的关注\",\"grey_text\":\"\"}"
+            let model = MineModel.deserialize(from: jsonString)
+            var myCellModel = [MineModel]()
+            myCellModel.append(model!)
+            
+            self.sectionsArr.append(myCellModel)
+            self.sectionsArr += sections
+            self.tableView.reloadData()
+        }
     }
     
     
@@ -30,7 +44,7 @@ class TYMineViewController: UIViewController,UITableViewDelegate,UITableViewData
 extension TYMineViewController {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return sectionsArr[section].count
     }
     
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -46,7 +60,7 @@ extension TYMineViewController {
     }
     
     public func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return sectionsArr.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,7 +69,10 @@ extension TYMineViewController {
         if cell == nil {
             cell = UITableViewCell.init(style: .default, reuseIdentifier: cellIdentifier)
         }
-        cell?.textLabel?.text = "cell"
+        let sections = sectionsArr[indexPath.section]
+        let mineModel = sections[indexPath.row]
+
+        cell?.textLabel?.text = mineModel.text
         return cell!
     }
     

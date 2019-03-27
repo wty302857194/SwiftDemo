@@ -31,9 +31,7 @@ class TYTabBar: UITabBar {
         midBtn.center = CGPoint(x: frame.width*0.5, y: frame.height*0.5-7)
 
         var index = 0
-        for  item in subviews {
-            print("在 index = \(index) 位置上的值为 \(item)")
-            
+        for  item in subviews {            
             if !item.isKind(of: NSClassFromString("UITabBarButton")!) {
                 continue
             }

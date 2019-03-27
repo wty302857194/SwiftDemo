@@ -11,6 +11,7 @@
 		C101FB19224A220C00AEDB3E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB18224A220C00AEDB3E /* Const.swift */; };
 		C101FB1C224A22C600AEDB3E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB1B224A22C600AEDB3E /* UIColor+Extension.swift */; };
 		C101FB20224A539800AEDB3E /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB1F224A539800AEDB3E /* NetWorkTool.swift */; };
+		C101FB22224B5D1D00AEDB3E /* MineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB21224B5D1D00AEDB3E /* MineModel.swift */; };
 		C105467C2249FEC9000FF552 /* TYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105467B2249FEC9000FF552 /* TYTabBar.swift */; };
 		C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */; };
 		C1FE6CBB2248BE90008B3C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FE6CB92248BE90008B3C57 /* LaunchScreen.storyboard */; };
@@ -29,6 +30,7 @@
 		C101FB18224A220C00AEDB3E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		C101FB1B224A22C600AEDB3E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		C101FB1F224A539800AEDB3E /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
+		C101FB21224B5D1D00AEDB3E /* MineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineModel.swift; sourceTree = "<group>"; };
 		C105467B2249FEC9000FF552 /* TYTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYTabBar.swift; sourceTree = "<group>"; };
 		C1FE6CAD2248BE8D008B3C57 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				C1FE6CCE2248D4AA008B3C57 /* TYMineViewController.swift */,
+				C101FB21224B5D1D00AEDB3E /* MineModel.swift */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -279,10 +282,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -304,6 +311,7 @@
 				C1FE6CC72248C6BB008B3C57 /* TYNavigationController.swift in Sources */,
 				C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */,
 				C1FE6CC92248C74E008B3C57 /* TYBaseTabBarController.swift in Sources */,
+				C101FB22224B5D1D00AEDB3E /* MineModel.swift in Sources */,
 				C101FB19224A220C00AEDB3E /* Const.swift in Sources */,
 				C101FB1C224A22C600AEDB3E /* UIColor+Extension.swift in Sources */,
 				C101FB20224A539800AEDB3E /* NetWorkTool.swift in Sources */,
