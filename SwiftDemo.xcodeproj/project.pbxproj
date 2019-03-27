@@ -10,6 +10,7 @@
 		3A5337CC9D5ED6B22974B47C /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8312B12A00E517BB474FA7 /* Pods_SwiftDemo.framework */; };
 		C101FB19224A220C00AEDB3E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB18224A220C00AEDB3E /* Const.swift */; };
 		C101FB1C224A22C600AEDB3E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB1B224A22C600AEDB3E /* UIColor+Extension.swift */; };
+		C101FB20224A539800AEDB3E /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB1F224A539800AEDB3E /* NetWorkTool.swift */; };
 		C105467C2249FEC9000FF552 /* TYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105467B2249FEC9000FF552 /* TYTabBar.swift */; };
 		C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */; };
 		C1FE6CBB2248BE90008B3C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FE6CB92248BE90008B3C57 /* LaunchScreen.storyboard */; };
@@ -27,6 +28,7 @@
 		99100E45AFF3ED1B06F65ECE /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C101FB18224A220C00AEDB3E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		C101FB1B224A22C600AEDB3E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C101FB1F224A539800AEDB3E /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
 		C105467B2249FEC9000FF552 /* TYTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYTabBar.swift; sourceTree = "<group>"; };
 		C1FE6CAD2248BE8D008B3C57 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		C101FB17224A15C100AEDB3E /* class */ = {
 			isa = PBXGroup;
 			children = (
+				C101FB1D224A4A4400AEDB3E /* Main */,
 				C1FE6CC52248C666008B3C57 /* BaseVC */,
 				C1FE6CC22248C619008B3C57 /* home */,
 				C1FE6CC42248C630008B3C57 /* mine */,
@@ -80,6 +83,23 @@
 				C101FB1B224A22C600AEDB3E /* UIColor+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C101FB1D224A4A4400AEDB3E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C101FB1A224A228200AEDB3E /* Extension */,
+				C101FB1E224A535500AEDB3E /* Tool */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C101FB1E224A535500AEDB3E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				C101FB1F224A539800AEDB3E /* NetWorkTool.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		C1FE6CA42248BE8D008B3C57 = {
@@ -103,7 +123,6 @@
 		C1FE6CAF2248BE8D008B3C57 /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C101FB1A224A228200AEDB3E /* Extension */,
 				C101FB17224A15C100AEDB3E /* class */,
 				C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */,
 				C1FE6CB92248BE90008B3C57 /* LaunchScreen.storyboard */,
@@ -176,6 +195,7 @@
 				C1FE6CA92248BE8D008B3C57 /* Sources */,
 				C1FE6CAA2248BE8D008B3C57 /* Frameworks */,
 				C1FE6CAB2248BE8D008B3C57 /* Resources */,
+				7ACFD1C3CF906FF7971D19FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +271,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7ACFD1C3CF906FF7971D19FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -268,6 +306,7 @@
 				C1FE6CC92248C74E008B3C57 /* TYBaseTabBarController.swift in Sources */,
 				C101FB19224A220C00AEDB3E /* Const.swift in Sources */,
 				C101FB1C224A22C600AEDB3E /* UIColor+Extension.swift in Sources */,
+				C101FB20224A539800AEDB3E /* NetWorkTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

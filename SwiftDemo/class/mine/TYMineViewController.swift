@@ -42,7 +42,7 @@ extension TYMineViewController {
     }
     
     public func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
-        return 0
+        return 0.01
     }
     
     public func numberOfSections(in tableView: UITableView) -> Int {
