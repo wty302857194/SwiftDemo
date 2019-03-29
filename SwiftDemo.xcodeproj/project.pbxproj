@@ -9,28 +9,27 @@
 /* Begin PBXBuildFile section */
 		3A5337CC9D5ED6B22974B47C /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8312B12A00E517BB474FA7 /* Pods_SwiftDemo.framework */; };
 		C101FB19224A220C00AEDB3E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB18224A220C00AEDB3E /* Const.swift */; };
-		C101FB1C224A22C600AEDB3E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB1B224A22C600AEDB3E /* UIColor+Extension.swift */; };
-		C101FB20224A539800AEDB3E /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB1F224A539800AEDB3E /* NetWorkTool.swift */; };
-		C101FB22224B5D1D00AEDB3E /* MineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB21224B5D1D00AEDB3E /* MineModel.swift */; };
 		C105467C2249FEC9000FF552 /* TYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105467B2249FEC9000FF552 /* TYTabBar.swift */; };
 		C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */; };
 		C1FE6CBB2248BE90008B3C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FE6CB92248BE90008B3C57 /* LaunchScreen.storyboard */; };
 		C1FE6CC72248C6BB008B3C57 /* TYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CC62248C6BB008B3C57 /* TYNavigationController.swift */; };
 		C1FE6CC92248C74E008B3C57 /* TYBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CC82248C74E008B3C57 /* TYBaseTabBarController.swift */; };
 		C1FE6CCB2248D448008B3C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1FE6CCA2248D448008B3C57 /* Assets.xcassets */; };
-		C1FE6CCD2248D496008B3C57 /* TYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CCC2248D496008B3C57 /* TYHomeViewController.swift */; };
-		C1FE6CCF2248D4AA008B3C57 /* TYMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CCE2248D4AA008B3C57 /* TYMineViewController.swift */; };
-		C1FE6CD12248D4BD008B3C57 /* TYVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CD02248D4BD008B3C57 /* TYVideoViewController.swift */; };
-		C1FE6CD42248D5A1008B3C57 /* TYHuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CD32248D5A1008B3C57 /* TYHuoshanViewController.swift */; };
+		E268814B8A7ED374AFD638DA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2688C720CE6AF8F87A38CE7 /* UIColor+Extension.swift */; };
+		E2688310CC3DED8EB7237BD7 /* TYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2688EB04D74F7CB63DDF36F /* TYHomeViewController.swift */; };
+		E26884132C797B6EFD58B94F /* TYMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E268840090C44D65CA532EA6 /* TYMineViewController.swift */; };
+		E26884E0509276843E8D38F2 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26888DB6C707D9C56161224 /* NetWorkTool.swift */; };
+		E26887266A9346B5BA2A0444 /* MineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2688FC1383BB76CC2C61017 /* MineModel.swift */; };
+		E26888A2BAB49EC3C3C612D2 /* TYMyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2688A8F82E484B5F76E5BB7 /* TYMyScrollView.swift */; };
+		E26888BCC09A9D0CA6C68CA1 /* MyMineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2688BFB579584DFD238A7BE /* MyMineCell.swift */; };
+		E2688A5573B2C246442CBD6C /* TYVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2688F3570EE025B1605FEDB /* TYVideoViewController.swift */; };
+		E2688D91898000DD419D4501 /* TYHuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E268855DB13289793E3B02E0 /* TYHuoshanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CE1D32E44583B4BBA82C460 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		99100E45AFF3ED1B06F65ECE /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C101FB18224A220C00AEDB3E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
-		C101FB1B224A22C600AEDB3E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		C101FB1F224A539800AEDB3E /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
-		C101FB21224B5D1D00AEDB3E /* MineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineModel.swift; sourceTree = "<group>"; };
 		C105467B2249FEC9000FF552 /* TYTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYTabBar.swift; sourceTree = "<group>"; };
 		C1FE6CAD2248BE8D008B3C57 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,11 +38,16 @@
 		C1FE6CC62248C6BB008B3C57 /* TYNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYNavigationController.swift; sourceTree = "<group>"; };
 		C1FE6CC82248C74E008B3C57 /* TYBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYBaseTabBarController.swift; sourceTree = "<group>"; };
 		C1FE6CCA2248D448008B3C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C1FE6CCC2248D496008B3C57 /* TYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYHomeViewController.swift; sourceTree = "<group>"; };
-		C1FE6CCE2248D4AA008B3C57 /* TYMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYMineViewController.swift; sourceTree = "<group>"; };
-		C1FE6CD02248D4BD008B3C57 /* TYVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYVideoViewController.swift; sourceTree = "<group>"; };
-		C1FE6CD32248D5A1008B3C57 /* TYHuoshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYHuoshanViewController.swift; sourceTree = "<group>"; };
 		CC8312B12A00E517BB474FA7 /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E268840090C44D65CA532EA6 /* TYMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYMineViewController.swift; sourceTree = "<group>"; };
+		E268855DB13289793E3B02E0 /* TYHuoshanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYHuoshanViewController.swift; sourceTree = "<group>"; };
+		E26888DB6C707D9C56161224 /* NetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
+		E2688A8F82E484B5F76E5BB7 /* TYMyScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYMyScrollView.swift; sourceTree = "<group>"; };
+		E2688BFB579584DFD238A7BE /* MyMineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMineCell.swift; sourceTree = "<group>"; };
+		E2688C720CE6AF8F87A38CE7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E2688EB04D74F7CB63DDF36F /* TYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYHomeViewController.swift; sourceTree = "<group>"; };
+		E2688F3570EE025B1605FEDB /* TYVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYVideoViewController.swift; sourceTree = "<group>"; };
+		E2688FC1383BB76CC2C61017 /* MineModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +73,6 @@
 		C101FB17224A15C100AEDB3E /* class */ = {
 			isa = PBXGroup;
 			children = (
-				C101FB1D224A4A4400AEDB3E /* Main */,
 				C1FE6CC52248C666008B3C57 /* BaseVC */,
 				C1FE6CC22248C619008B3C57 /* home */,
 				C1FE6CC42248C630008B3C57 /* mine */,
@@ -77,31 +80,6 @@
 				C1FE6CD22248D4C8008B3C57 /* Huoshan */,
 			);
 			path = class;
-			sourceTree = "<group>";
-		};
-		C101FB1A224A228200AEDB3E /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				C101FB1B224A22C600AEDB3E /* UIColor+Extension.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		C101FB1D224A4A4400AEDB3E /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				C101FB1A224A228200AEDB3E /* Extension */,
-				C101FB1E224A535500AEDB3E /* Tool */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		C101FB1E224A535500AEDB3E /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				C101FB1F224A539800AEDB3E /* NetWorkTool.swift */,
-			);
-			path = Tool;
 			sourceTree = "<group>";
 		};
 		C1FE6CA42248BE8D008B3C57 = {
@@ -125,6 +103,7 @@
 		C1FE6CAF2248BE8D008B3C57 /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E2688DC22B32C256CF37AC5D /* Main */,
 				C101FB17224A15C100AEDB3E /* class */,
 				C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */,
 				C1FE6CB92248BE90008B3C57 /* LaunchScreen.storyboard */,
@@ -138,7 +117,9 @@
 		C1FE6CC22248C619008B3C57 /* home */ = {
 			isa = PBXGroup;
 			children = (
-				C1FE6CCC2248D496008B3C57 /* TYHomeViewController.swift */,
+				E2688DAEE025016EBC5DC04E /* controller */,
+				E2688D1A6258E3B7C0292362 /* model */,
+				E268886969586D1AD3213572 /* view */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -146,7 +127,9 @@
 		C1FE6CC32248C627008B3C57 /* video */ = {
 			isa = PBXGroup;
 			children = (
-				C1FE6CD02248D4BD008B3C57 /* TYVideoViewController.swift */,
+				E2688AEDE9A163AE16184AA6 /* controller */,
+				E26881C464F65A525437C805 /* model */,
+				E2688945E175D55B8D43A0C6 /* view */,
 			);
 			path = video;
 			sourceTree = "<group>";
@@ -154,8 +137,9 @@
 		C1FE6CC42248C630008B3C57 /* mine */ = {
 			isa = PBXGroup;
 			children = (
-				C1FE6CCE2248D4AA008B3C57 /* TYMineViewController.swift */,
-				C101FB21224B5D1D00AEDB3E /* MineModel.swift */,
+				E2688312F9CD1A6C80FA845B /* controller */,
+				E26888331508D2DC06E6C82E /* model */,
+				E26887F662FDD9CA1CD2D4C5 /* view */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -173,9 +157,127 @@
 		C1FE6CD22248D4C8008B3C57 /* Huoshan */ = {
 			isa = PBXGroup;
 			children = (
-				C1FE6CD32248D5A1008B3C57 /* TYHuoshanViewController.swift */,
+				E2688B672142B1763AA32FED /* controller */,
+				E26887DAFDE4052178970DA4 /* model */,
+				E2688886CB43CFAF07FB9EA3 /* view */,
 			);
 			path = Huoshan;
+			sourceTree = "<group>";
+		};
+		E26881C464F65A525437C805 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E2688312F9CD1A6C80FA845B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E268840090C44D65CA532EA6 /* TYMineViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E26887DAFDE4052178970DA4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E26887F662FDD9CA1CD2D4C5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E2688BFB579584DFD238A7BE /* MyMineCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E26888331508D2DC06E6C82E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E2688FC1383BB76CC2C61017 /* MineModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E268886969586D1AD3213572 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E2688886CB43CFAF07FB9EA3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E2688945E175D55B8D43A0C6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E2688AEDE9A163AE16184AA6 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2688F3570EE025B1605FEDB /* TYVideoViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E2688B672142B1763AA32FED /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E268855DB13289793E3B02E0 /* TYHuoshanViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E2688CA2C56CFA15C6E108E4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E2688C720CE6AF8F87A38CE7 /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E2688CCA53A0DCD29092BD4A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E26888DB6C707D9C56161224 /* NetWorkTool.swift */,
+				E2688A8F82E484B5F76E5BB7 /* TYMyScrollView.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E2688D1A6258E3B7C0292362 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E2688DAEE025016EBC5DC04E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2688EB04D74F7CB63DDF36F /* TYHomeViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E2688DC22B32C256CF37AC5D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E2688CA2C56CFA15C6E108E4 /* Extension */,
+				E2688CCA53A0DCD29092BD4A /* Tool */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		E3407A3FB25A919A7DAAA050 /* Pods */ = {
@@ -303,18 +405,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1FE6CCD2248D496008B3C57 /* TYHomeViewController.swift in Sources */,
-				C1FE6CD12248D4BD008B3C57 /* TYVideoViewController.swift in Sources */,
-				C1FE6CD42248D5A1008B3C57 /* TYHuoshanViewController.swift in Sources */,
 				C105467C2249FEC9000FF552 /* TYTabBar.swift in Sources */,
-				C1FE6CCF2248D4AA008B3C57 /* TYMineViewController.swift in Sources */,
 				C1FE6CC72248C6BB008B3C57 /* TYNavigationController.swift in Sources */,
 				C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */,
 				C1FE6CC92248C74E008B3C57 /* TYBaseTabBarController.swift in Sources */,
-				C101FB22224B5D1D00AEDB3E /* MineModel.swift in Sources */,
 				C101FB19224A220C00AEDB3E /* Const.swift in Sources */,
-				C101FB1C224A22C600AEDB3E /* UIColor+Extension.swift in Sources */,
-				C101FB20224A539800AEDB3E /* NetWorkTool.swift in Sources */,
+				E26884132C797B6EFD58B94F /* TYMineViewController.swift in Sources */,
+				E26887266A9346B5BA2A0444 /* MineModel.swift in Sources */,
+				E26888BCC09A9D0CA6C68CA1 /* MyMineCell.swift in Sources */,
+				E2688D91898000DD419D4501 /* TYHuoshanViewController.swift in Sources */,
+				E2688310CC3DED8EB7237BD7 /* TYHomeViewController.swift in Sources */,
+				E2688A5573B2C246442CBD6C /* TYVideoViewController.swift in Sources */,
+				E268814B8A7ED374AFD638DA /* UIColor+Extension.swift in Sources */,
+				E26884E0509276843E8D38F2 /* NetWorkTool.swift in Sources */,
+				E26888A2BAB49EC3C3C612D2 /* TYMyScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
