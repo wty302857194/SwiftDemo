@@ -40,6 +40,7 @@ extension NetWorkToolProtocol {
                             var mineModel = [MineModel]()
                             for row in items.arrayObject! {
                                 let mycellModel = MineModel.deserialize(from: row as? NSDictionary)
+                                
                                 mineModel.append(mycellModel!)
                             }
                             sectionsArr.append(mineModel)

@@ -10,6 +10,8 @@
 		3A5337CC9D5ED6B22974B47C /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8312B12A00E517BB474FA7 /* Pods_SwiftDemo.framework */; };
 		C101FB19224A220C00AEDB3E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101FB18224A220C00AEDB3E /* Const.swift */; };
 		C105467C2249FEC9000FF552 /* TYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105467B2249FEC9000FF552 /* TYTabBar.swift */; };
+		C10E39B3224DCA74002F29D8 /* TYMineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10E39B1224DCA74002F29D8 /* TYMineTableViewCell.swift */; };
+		C10E39B4224DCA74002F29D8 /* TYMineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C10E39B2224DCA74002F29D8 /* TYMineTableViewCell.xib */; };
 		C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */; };
 		C1FE6CBB2248BE90008B3C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FE6CB92248BE90008B3C57 /* LaunchScreen.storyboard */; };
 		C1FE6CC72248C6BB008B3C57 /* TYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CC62248C6BB008B3C57 /* TYNavigationController.swift */; };
@@ -21,7 +23,6 @@
 		E26884E0509276843E8D38F2 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26888DB6C707D9C56161224 /* NetWorkTool.swift */; };
 		E26887266A9346B5BA2A0444 /* MineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2688FC1383BB76CC2C61017 /* MineModel.swift */; };
 		E26888A2BAB49EC3C3C612D2 /* TYMyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2688A8F82E484B5F76E5BB7 /* TYMyScrollView.swift */; };
-		E26888BCC09A9D0CA6C68CA1 /* MyMineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2688BFB579584DFD238A7BE /* MyMineCell.swift */; };
 		E2688A5573B2C246442CBD6C /* TYVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2688F3570EE025B1605FEDB /* TYVideoViewController.swift */; };
 		E2688D91898000DD419D4501 /* TYHuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E268855DB13289793E3B02E0 /* TYHuoshanViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,8 @@
 		99100E45AFF3ED1B06F65ECE /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C101FB18224A220C00AEDB3E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		C105467B2249FEC9000FF552 /* TYTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYTabBar.swift; sourceTree = "<group>"; };
+		C10E39B1224DCA74002F29D8 /* TYMineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYMineTableViewCell.swift; sourceTree = "<group>"; };
+		C10E39B2224DCA74002F29D8 /* TYMineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TYMineTableViewCell.xib; sourceTree = "<group>"; };
 		C1FE6CAD2248BE8D008B3C57 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1FE6CBA2248BE90008B3C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,7 +46,6 @@
 		E268855DB13289793E3B02E0 /* TYHuoshanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYHuoshanViewController.swift; sourceTree = "<group>"; };
 		E26888DB6C707D9C56161224 /* NetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
 		E2688A8F82E484B5F76E5BB7 /* TYMyScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYMyScrollView.swift; sourceTree = "<group>"; };
-		E2688BFB579584DFD238A7BE /* MyMineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMineCell.swift; sourceTree = "<group>"; };
 		E2688C720CE6AF8F87A38CE7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		E2688EB04D74F7CB63DDF36F /* TYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYHomeViewController.swift; sourceTree = "<group>"; };
 		E2688F3570EE025B1605FEDB /* TYVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYVideoViewController.swift; sourceTree = "<group>"; };
@@ -75,9 +77,9 @@
 			children = (
 				C1FE6CC52248C666008B3C57 /* BaseVC */,
 				C1FE6CC22248C619008B3C57 /* home */,
-				C1FE6CC42248C630008B3C57 /* mine */,
 				C1FE6CC32248C627008B3C57 /* video */,
 				C1FE6CD22248D4C8008B3C57 /* Huoshan */,
+				C1FE6CC42248C630008B3C57 /* mine */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -189,7 +191,8 @@
 		E26887F662FDD9CA1CD2D4C5 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				E2688BFB579584DFD238A7BE /* MyMineCell.swift */,
+				C10E39B1224DCA74002F29D8 /* TYMineTableViewCell.swift */,
+				C10E39B2224DCA74002F29D8 /* TYMineTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			files = (
 				C1FE6CBB2248BE90008B3C57 /* LaunchScreen.storyboard in Resources */,
 				C1FE6CCB2248D448008B3C57 /* Assets.xcassets in Resources */,
+				C10E39B4224DCA74002F29D8 /* TYMineTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,13 +410,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C105467C2249FEC9000FF552 /* TYTabBar.swift in Sources */,
+				C10E39B3224DCA74002F29D8 /* TYMineTableViewCell.swift in Sources */,
 				C1FE6CC72248C6BB008B3C57 /* TYNavigationController.swift in Sources */,
 				C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */,
 				C1FE6CC92248C74E008B3C57 /* TYBaseTabBarController.swift in Sources */,
 				C101FB19224A220C00AEDB3E /* Const.swift in Sources */,
 				E26884132C797B6EFD58B94F /* TYMineViewController.swift in Sources */,
 				E26887266A9346B5BA2A0444 /* MineModel.swift in Sources */,
-				E26888BCC09A9D0CA6C68CA1 /* MyMineCell.swift in Sources */,
 				E2688D91898000DD419D4501 /* TYHuoshanViewController.swift in Sources */,
 				E2688310CC3DED8EB7237BD7 /* TYHomeViewController.swift in Sources */,
 				E2688A5573B2C246442CBD6C /* TYVideoViewController.swift in Sources */,

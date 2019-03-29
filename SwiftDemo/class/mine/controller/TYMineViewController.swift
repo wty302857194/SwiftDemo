@@ -51,9 +51,7 @@ extension TYMineViewController {
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }
-
-    optional public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
-    {
+    public func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return 10
     }
 
