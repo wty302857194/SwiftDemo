@@ -13,6 +13,8 @@ class TYMineTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLab: UILabel!
     @IBOutlet weak var rightLab: UILabel!
     @IBOutlet weak var jianTouImg: UIImageView!
+    var mineModel : MineModel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,4 +30,11 @@ class TYMineTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    public func addDataSource(mineModel:MineModel) {
+        self.mineModel = mineModel
+        
+        titleLab.text = mineModel.text
+        rightLab.text = mineModel.grey_text
+        
+    }
 }

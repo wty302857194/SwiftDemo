@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+
 
 class TYMineViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
@@ -15,7 +18,7 @@ class TYMineViewController: UIViewController,UITableViewDelegate,UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       
+        tableView.register(UINib(nibName: String(describing: TYMineTableViewCell.self), bundle: nil), forCellReuseIdentifier: NSStringFromClass(TYMineTableViewCell.self))
         
         view.addSubview(tableView)
         
@@ -28,13 +31,11 @@ class TYMineViewController: UIViewController,UITableViewDelegate,UITableViewData
             self.sectionsArr.append(myCellModel)
             self.sectionsArr += sections
             self.tableView.reloadData()
-
         }
     }
     
-    
     lazy var tableView: UITableView = {
-        let tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight), style: .grouped)
+        let tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight), style: .plain)
         tableView.delegate = self
         tableView.dataSource = self;
         return tableView
@@ -48,15 +49,11 @@ extension TYMineViewController {
         return sectionsArr[section].count
     }
     
-    public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }
     public func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return 10
-    }
-
-    public func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
-        return 0.01
     }
     
     public func numberOfSections(in tableView: UITableView) -> Int {
@@ -64,21 +61,24 @@ extension TYMineViewController {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "cell"
-        var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
-        if cell == nil {
-            cell = UITableViewCell.init(style: .default, reuseIdentifier: cellIdentifier)
-        }
+//        let cellIdentifier = "cell"
+//        var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
+//        if cell == nil {
+//            cell = TYMineTableViewCell(style: .default, reuseIdentifier: cellIdentifier)
+//        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(TYMineTableViewCell.self), for: indexPath) as! TYMineTableViewCell
         let sections = sectionsArr[indexPath.section]
         let mineModel = sections[indexPath.row]
 
-        cell?.textLabel?.text = mineModel.text
-        return cell!
+        cell.addDataSource(mineModel: mineModel)
+//        cell.titleLab?.text = mineModel.text
+        return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 10))
-        view.backgroundColor = UIColor.gray
+        view.backgroundColor = UIColor.globalBackgroundColor()
         return view
     }
 }

@@ -10,15 +10,22 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+
 protocol NetWorkToolProtocol {
     
-    static func mineRequestData(cellBack:(_ sections : [[MineModel]]) -> ())
+    static func mineRequestData(cellBack: @escaping (_ sections : [[MineModel]]) -> ())
+
+    static func mineConcernRequestData()
 }
 
 extension NetWorkToolProtocol {
     
     
-    static func mineRequestData(cellBack:@escaping (_ sections : [[MineModel]]) -> ()) {
+    static func mineConcernRequestData() {
+        
+    }
+    
+    static func mineRequestData(cellBack: @escaping (_ sections : [[MineModel]]) -> ()) {
         let urlStr = BASE_URL + "/user/tab/tabs/?"
         let params = ["device_id":device_id]
         
@@ -27,9 +34,6 @@ extension NetWorkToolProtocol {
             guard response.result.isSuccess else {
                 return
             }
-            
-            
-            print("result==\(response.result)")
             // 返回结果，是否成功
             if let jsonValue:NSDictionary = response.result.value as? NSDictionary {
                 let json = JSON(jsonValue)
@@ -50,10 +54,8 @@ extension NetWorkToolProtocol {
                 }
             }
         })
-        
+
     }
 }
 
-struct  NetWorkTool: NetWorkToolProtocol{
-    static func mineRequestData(cellBack: ([[MineModel]]) -> ()) {}
-}
+struct  NetWorkTool: NetWorkToolProtocol {}
