@@ -15,15 +15,11 @@ protocol NetWorkToolProtocol {
     
     static func mineRequestData(cellBack: @escaping (_ sections : [[MineModel]]) -> ())
 
-    static func mineConcernRequestData()
+    /// 我的关注数据
+    static func loadMyConcern(completionHandler: @escaping (_ concerns: [MyConcern]) -> ())
 }
 
 extension NetWorkToolProtocol {
-    
-    
-    static func mineConcernRequestData() {
-        
-    }
     
     static func mineRequestData(cellBack: @escaping (_ sections : [[MineModel]]) -> ()) {
         let urlStr = BASE_URL + "/user/tab/tabs/?"
@@ -55,6 +51,31 @@ extension NetWorkToolProtocol {
             }
         })
 
+    }
+    
+    /// 我的关注数据
+    static func loadMyConcern(completionHandler: @escaping (_ concerns: [MyConcern]) -> ()) {
+        
+        let url = BASE_URL + "/concern/v2/follow/my_follow/?"
+        let params = ["device_id": device_id]
+        
+        Alamofire.request(url, parameters: params).responseJSON { (response) in
+            guard response.result.isSuccess else {
+                // 网络错误的提示信息
+                return
+            }
+            if let value = response.result.value {
+                let json = JSON(value)
+                guard json["message"] == "success" else {
+                    return
+                }
+                if let datas = json["data"].arrayObject {
+                    completionHandler(datas.compactMap({
+                        MyConcern.deserialize(from: $0 as? NSDictionary)
+                    }))
+                }
+            }
+        }
     }
 }
 

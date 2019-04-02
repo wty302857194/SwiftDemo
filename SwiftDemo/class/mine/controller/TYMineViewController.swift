@@ -13,14 +13,19 @@ import SwiftyJSON
 
 class TYMineViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-     var sectionsArr = [[MineModel]]()
+    var sectionsArr = [[MineModel]]()
+    // 存储我的关注数据
+    var concerns = [MyConcern]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.TYFirstSectionTableViewCell
         tableView.register(UINib(nibName: String(describing: TYMineTableViewCell.self), bundle: nil), forCellReuseIdentifier: NSStringFromClass(TYMineTableViewCell.self))
+        tableView.register(UINib(nibName: String(describing: TYFirstSectionTableViewCell.self), bundle: nil), forCellReuseIdentifier: NSStringFromClass(TYFirstSectionTableViewCell.self))
         
         view.addSubview(tableView)
+        
+        
         
         NetWorkTool.mineRequestData { (sections) in
             let jsonString = "{\"text\":\"我的关注\",\"grey_text\":\"\"}"
@@ -31,6 +36,12 @@ class TYMineViewController: UIViewController,UITableViewDelegate,UITableViewData
             self.sectionsArr.append(myCellModel)
             self.sectionsArr += sections
             self.tableView.reloadData()
+            
+            NetWorkTool.loadMyConcern(completionHandler: { (concerns) in
+                self.concerns = concerns
+                let indexSet = IndexSet(integer: 0)
+                self.tableView.reloadSections(indexSet, with: .automatic)
+            })
         }
     }
     
@@ -50,7 +61,10 @@ extension TYMineViewController {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        if indexPath.section == 0 && indexPath.row == 0 {
+            return (concerns.count == 0 || concerns.count == 1) ? 40 : 114
+        }
+        return 40
     }
     public func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return 10
@@ -61,18 +75,23 @@ extension TYMineViewController {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cellIdentifier = "cell"
-//        var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
-//        if cell == nil {
-//            cell = TYMineTableViewCell(style: .default, reuseIdentifier: cellIdentifier)
-//        }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(TYMineTableViewCell.self), for: indexPath) as! TYMineTableViewCell
+        //        let cellIdentifier = "cell"
+        //        var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
+        //        if cell == nil {
+        //            cell = TYMineTableViewCell(style: .default, reuseIdentifier: cellIdentifier)
+        //        }
         let sections = sectionsArr[indexPath.section]
         let mineModel = sections[indexPath.row]
-
-        cell.addDataSource(mineModel: mineModel)
-//        cell.titleLab?.text = mineModel.text
+        
+        if indexPath.section == 0&&indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(TYFirstSectionTableViewCell.self), for: indexPath) as! TYFirstSectionTableViewCell
+            cell.mineModel = mineModel
+            cell.myConcerns = concerns
+            return cell
+        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(TYMineTableViewCell.self), for: indexPath) as! TYMineTableViewCell
+        cell.mineModel = mineModel
         return cell
     }
     
