@@ -17,11 +17,28 @@ class TYMineViewController: UIViewController,UITableViewDelegate,UITableViewData
     // 存储我的关注数据
     var concerns = [MyConcern]()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: false)
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.TYFirstSectionTableViewCell
         tableView.register(UINib(nibName: String(describing: TYMineTableViewCell.self), bundle: nil), forCellReuseIdentifier: NSStringFromClass(TYMineTableViewCell.self))
         tableView.register(UINib(nibName: String(describing: TYFirstSectionTableViewCell.self), bundle: nil), forCellReuseIdentifier: NSStringFromClass(TYFirstSectionTableViewCell.self))
+        tableView.tableHeaderView = noLogInHeaderView
         
         view.addSubview(tableView)
         
@@ -51,6 +68,13 @@ class TYMineViewController: UIViewController,UITableViewDelegate,UITableViewData
         tableView.dataSource = self;
         return tableView
     }()
+    
+    lazy var noLogInHeaderView : TYNoLogInHeaderView =  {
+        let noLogInHeaderView = Bundle.main.loadNibNamed("\(TYNoLogInHeaderView.self)", owner: nil, options: nil)?.last as! TYNoLogInHeaderView
+        return noLogInHeaderView
+    }()
+    
+    
 }
 
 
@@ -62,7 +86,7 @@ extension TYMineViewController {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 && indexPath.row == 0 {
-            return (concerns.count == 0 || concerns.count == 1) ? 40 : 114
+            return (concerns.count == 0 || concerns.count == 1) ? 40 : 120
         }
         return 40
     }
@@ -99,5 +123,16 @@ extension TYMineViewController {
         let view = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 10))
         view.backgroundColor = UIColor.globalBackgroundColor()
         return view
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        
+        if offsetY < 0 {
+            let totalOffset = 280 + abs(offsetY)
+            let f = totalOffset / 280
+            noLogInHeaderView.backView.frame = CGRect(x: -kScreenWidth * (f - 1) * 0.5, y: offsetY, width: kScreenWidth * f, height: totalOffset)
+        }
+        
     }
 }

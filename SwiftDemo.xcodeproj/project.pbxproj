@@ -22,6 +22,8 @@
 		C14AF59B2251F33400C33FEC /* SwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14AF59A2251F33400C33FEC /* SwiftDemoTests.swift */; };
 		C14AF5A6225204CC00C33FEC /* TYMyConcernCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14AF5A4225204CC00C33FEC /* TYMyConcernCollectionViewCell.swift */; };
 		C14AF5A7225204CC00C33FEC /* TYMyConcernCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14AF5A5225204CC00C33FEC /* TYMyConcernCollectionViewCell.xib */; };
+		C14AF5A9225304BF00C33FEC /* TYNoLogInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14AF5A8225304BF00C33FEC /* TYNoLogInHeaderView.swift */; };
+		C14AF5AB225304CF00C33FEC /* TYNoLogInHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14AF5AA225304CF00C33FEC /* TYNoLogInHeaderView.xib */; };
 		C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */; };
 		C1FE6CBB2248BE90008B3C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FE6CB92248BE90008B3C57 /* LaunchScreen.storyboard */; };
 		C1FE6CC72248C6BB008B3C57 /* TYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CC62248C6BB008B3C57 /* TYNavigationController.swift */; };
@@ -74,6 +76,8 @@
 		C14AF59C2251F33400C33FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C14AF5A4225204CC00C33FEC /* TYMyConcernCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYMyConcernCollectionViewCell.swift; sourceTree = "<group>"; };
 		C14AF5A5225204CC00C33FEC /* TYMyConcernCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TYMyConcernCollectionViewCell.xib; sourceTree = "<group>"; };
+		C14AF5A8225304BF00C33FEC /* TYNoLogInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYNoLogInHeaderView.swift; sourceTree = "<group>"; };
+		C14AF5AA225304CF00C33FEC /* TYNoLogInHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TYNoLogInHeaderView.xib; sourceTree = "<group>"; };
 		C1FE6CAD2248BE8D008B3C57 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1FE6CBA2248BE90008B3C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -272,6 +276,8 @@
 				C14AF5812251E1F900C33FEC /* TYFirstSectionTableViewCell.xib */,
 				C14AF5A4225204CC00C33FEC /* TYMyConcernCollectionViewCell.swift */,
 				C14AF5A5225204CC00C33FEC /* TYMyConcernCollectionViewCell.xib */,
+				C14AF5A8225304BF00C33FEC /* TYNoLogInHeaderView.swift */,
+				C14AF5AA225304CF00C33FEC /* TYNoLogInHeaderView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -498,6 +504,7 @@
 				C1FE6CBB2248BE90008B3C57 /* LaunchScreen.storyboard in Resources */,
 				C14AF5832251E1F900C33FEC /* TYFirstSectionTableViewCell.xib in Resources */,
 				C1FE6CCB2248D448008B3C57 /* Assets.xcassets in Resources */,
+				C14AF5AB225304CF00C33FEC /* TYNoLogInHeaderView.xib in Resources */,
 				C14AF5A7225204CC00C33FEC /* TYMyConcernCollectionViewCell.xib in Resources */,
 				C10E39B4224DCA74002F29D8 /* TYMineTableViewCell.xib in Resources */,
 			);
@@ -533,14 +540,26 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +609,7 @@
 				C14AF5A6225204CC00C33FEC /* TYMyConcernCollectionViewCell.swift in Sources */,
 				E26888A2BAB49EC3C3C612D2 /* TYMyScrollView.swift in Sources */,
 				C14AF57B2250FF9200C33FEC /* TYNetBaseUrl.swift in Sources */,
+				C14AF5A9225304BF00C33FEC /* TYNoLogInHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

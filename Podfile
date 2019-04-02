@@ -10,5 +10,11 @@ target 'SwiftDemo' do
     pod 'SwiftyJSON', '~> 4.0'
     pod 'HandyJSON', '5.0.0-beta'
     pod 'SVProgressHUD'
+    pod 'Kingfisher'
+    pod 'IBAnimatable'
+    pod 'SwiftTheme'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'SQLite.swift'
     
 end

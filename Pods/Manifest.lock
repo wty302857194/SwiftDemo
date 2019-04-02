@@ -1,28 +1,55 @@
 PODS:
   - Alamofire (4.8.2)
   - HandyJSON (5.0.0-beta)
+  - IBAnimatable (5.2.1)
+  - Kingfisher (5.3.1)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/standard (0.11.5)
   - SVProgressHUD (2.2.5)
+  - SwiftTheme (0.4.3)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - HandyJSON (= 5.0.0-beta)
+  - IBAnimatable
+  - Kingfisher
+  - RxCocoa
+  - RxSwift
+  - SQLite.swift
   - SVProgressHUD
+  - SwiftTheme
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - HandyJSON
+    - IBAnimatable
+    - Kingfisher
+    - RxCocoa
+    - RxSwift
+    - SQLite.swift
     - SVProgressHUD
+    - SwiftTheme
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   HandyJSON: b84ac9904050a0897a0802092b7cb8808e0a4e9a
+  IBAnimatable: a46b835ec6875178516cf7e014a40194d6bfa3fc
+  Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftTheme: 628345b948068a48d330d76dffb1a990ea5f90aa
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 9d4abf52db889cf00d13169a37b252d08d2332cc
+PODFILE CHECKSUM: 28a260e3f1f26421cd195cca8c329ca2f85e0b29
 
 COCOAPODS: 1.5.3

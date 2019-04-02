@@ -24,11 +24,11 @@ class TYTabBar: UITabBar {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        let height: CGFloat = frame.height
+        let height: CGFloat = 49//frame.height
         let width: CGFloat = frame.width*0.2
         let y_henght: CGFloat = 0
         
-        midBtn.center = CGPoint(x: frame.width*0.5, y: frame.height*0.5-7)
+        midBtn.center = CGPoint(x: frame.width*0.5, y: height*0.5-7)
 
         var index = 0
         for  item in subviews {            
