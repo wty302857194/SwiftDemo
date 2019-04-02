@@ -84,4 +84,5 @@ class MyConcernFlowLayout: UICollectionViewFlowLayout {
         scrollDirection = .horizontal
         sectionInset = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5)
     }
+    
 }

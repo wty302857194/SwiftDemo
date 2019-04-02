@@ -69,7 +69,7 @@ class TYMineViewController: UIViewController,UITableViewDelegate,UITableViewData
         return tableView
     }()
     
-    lazy var noLogInHeaderView : TYNoLogInHeaderView =  {
+    private lazy var noLogInHeaderView : TYNoLogInHeaderView =  {
         let noLogInHeaderView = Bundle.main.loadNibNamed("\(TYNoLogInHeaderView.self)", owner: nil, options: nil)?.last as! TYNoLogInHeaderView
         return noLogInHeaderView
     }()

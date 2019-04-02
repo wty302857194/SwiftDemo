@@ -46,6 +46,9 @@
                             <state key="normal" title="夜间" image="nighticon_profile_24x24_">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="dayOrNightButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="OC1-sI-1kR"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,23 +91,27 @@
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="pP8-Vx-clP">
                     <rect key="frame" x="0.0" y="41.666666666666664" width="437" height="73.333333333333343"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellphoneicon_login_profile_66x66_" translatesAutoresizingMaskIntoConstraints="NO" id="Zoj-YO-vaZ">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x28-DP-mzo">
                             <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="73.333333333333329"/>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weixinicon_login_profile_66x66_" translatesAutoresizingMaskIntoConstraints="NO" id="ZyC-ny-cn0">
+                            <state key="normal" image="cellphoneicon_login_profile_66x66_"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOQ-EA-bk0">
                             <rect key="frame" x="109.66666666666669" y="0.0" width="108" height="73.333333333333329"/>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qqicon_login_profile_66x66_" translatesAutoresizingMaskIntoConstraints="NO" id="mG4-2r-Jri">
+                            <state key="normal" image="weixinicon_login_profile_66x66_"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6E-rL-NIj">
                             <rect key="frame" x="219.66666666666666" y="0.0" width="107.66666666666666" height="73.333333333333329"/>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sinaicon_login_profile_66x66_" translatesAutoresizingMaskIntoConstraints="NO" id="yBp-ch-RHe">
+                            <state key="normal" image="qqicon_login_profile_66x66_"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfh-cl-gBA">
                             <rect key="frame" x="329.33333333333331" y="0.0" width="107.66666666666669" height="73.333333333333329"/>
-                        </imageView>
+                            <state key="normal" image="sinaicon_login_profile_66x66_"/>
+                        </button>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="ZyC-ny-cn0" firstAttribute="width" secondItem="Zoj-YO-vaZ" secondAttribute="width" id="LTC-Oc-WIN"/>
-                        <constraint firstItem="mG4-2r-Jri" firstAttribute="width" secondItem="Zoj-YO-vaZ" secondAttribute="width" id="Nff-Ac-7qL"/>
-                        <constraint firstItem="yBp-ch-RHe" firstAttribute="width" secondItem="Zoj-YO-vaZ" secondAttribute="width" id="qUX-Xi-y02"/>
+                        <constraint firstItem="wOQ-EA-bk0" firstAttribute="width" secondItem="x28-DP-mzo" secondAttribute="width" id="LYg-Nd-wEH"/>
+                        <constraint firstItem="rfh-cl-gBA" firstAttribute="width" secondItem="x28-DP-mzo" secondAttribute="width" id="huw-bg-XKc"/>
+                        <constraint firstItem="c6E-rL-NIj" firstAttribute="width" secondItem="x28-DP-mzo" secondAttribute="width" id="pR7-Cd-koQ"/>
                     </constraints>
                 </stackView>
             </subviews>
@@ -128,10 +135,14 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="backView" destination="twf-RO-7pV" id="Hyw-F4-L3K"/>
-                <outlet property="phone" destination="Zoj-YO-vaZ" id="yE6-uK-aXS"/>
-                <outlet property="qq" destination="mG4-2r-Jri" id="XAd-d8-P1b"/>
-                <outlet property="weChat" destination="ZyC-ny-cn0" id="tQ7-2c-uMd"/>
-                <outlet property="xinlang" destination="yBp-ch-RHe" id="RdU-Kc-03o"/>
+                <outlet property="dayOrNightButton" destination="fnC-kR-Y9c" id="Iqa-IL-8al"/>
+                <outlet property="favoriteButton" destination="lol-EK-ylo" id="nXF-Ve-gKB"/>
+                <outlet property="historyButton" destination="goA-yK-ckH" id="Jv3-Fr-3Ag"/>
+                <outlet property="mobileButton" destination="x28-DP-mzo" id="hzM-6I-OKg"/>
+                <outlet property="moreLoginButton" destination="scQ-xc-3F4" id="fST-rw-B6R"/>
+                <outlet property="qqButton" destination="c6E-rL-NIj" id="haZ-2a-0gu"/>
+                <outlet property="sinaButton" destination="rfh-cl-gBA" id="NWK-Kr-uGQ"/>
+                <outlet property="wechatButton" destination="wOQ-EA-bk0" id="zCE-68-9eo"/>
             </connections>
             <point key="canvasLocation" x="171.73913043478262" y="-134.5108695652174"/>
         </view>
