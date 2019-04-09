@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftDemo/class/mine/view/TYNoLogInHeaderView.swift"
-            timestampString = "575902265.076125"
+            filePath = "Pods/SwiftTheme/Source/NSObject+Theme.swift"
+            timestampString = "576467627.40475"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "awakeFromNib()"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "performThemePicker(selector:picker:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

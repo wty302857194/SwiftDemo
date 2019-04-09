@@ -69,8 +69,8 @@ class TYMineViewController: UIViewController,UITableViewDelegate,UITableViewData
         return tableView
     }()
     
-    private lazy var noLogInHeaderView : TYNoLogInHeaderView =  {
-        let noLogInHeaderView = Bundle.main.loadNibNamed("\(TYNoLogInHeaderView.self)", owner: nil, options: nil)?.last as! TYNoLogInHeaderView
+    private lazy var noLogInHeaderView : NoLoginHeaderView =  {
+        let noLogInHeaderView = Bundle.main.loadNibNamed("\(NoLoginHeaderView.self)", owner: nil, options: nil)?.last as! NoLoginHeaderView
         return noLogInHeaderView
     }()
     
@@ -131,7 +131,7 @@ extension TYMineViewController {
         if offsetY < 0 {
             let totalOffset = 280 + abs(offsetY)
             let f = totalOffset / 280
-            noLogInHeaderView.backView.frame = CGRect(x: -kScreenWidth * (f - 1) * 0.5, y: offsetY, width: kScreenWidth * f, height: totalOffset)
+            noLogInHeaderView.bgImageView.frame = CGRect(x: -kScreenWidth * (f - 1) * 0.5, y: offsetY, width: kScreenWidth * f, height: totalOffset)
         }
         
     }

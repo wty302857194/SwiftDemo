@@ -138,7 +138,7 @@
                 <outlet property="dayOrNightButton" destination="fnC-kR-Y9c" id="Iqa-IL-8al"/>
                 <outlet property="favoriteButton" destination="lol-EK-ylo" id="nXF-Ve-gKB"/>
                 <outlet property="historyButton" destination="goA-yK-ckH" id="Jv3-Fr-3Ag"/>
-                <outlet property="mobileButton" destination="x28-DP-mzo" id="hzM-6I-OKg"/>
+                <outlet property="mobileButton" destination="x28-DP-mzo" id="ntf-Fa-qfK"/>
                 <outlet property="moreLoginButton" destination="scQ-xc-3F4" id="fST-rw-B6R"/>
                 <outlet property="qqButton" destination="c6E-rL-NIj" id="haZ-2a-0gu"/>
                 <outlet property="sinaButton" destination="rfh-cl-gBA" id="NWK-Kr-uGQ"/>

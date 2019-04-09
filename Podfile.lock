@@ -26,7 +26,7 @@ PODS:
   - SQLite.swift/standard (0.11.5)
   - SVProgressHUD (2.2.5)
   - SwiftTheme (0.4.3)
-  - SwiftyJSON (4.2.0)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -82,7 +82,7 @@ SPEC CHECKSUMS:
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftTheme: 628345b948068a48d330d76dffb1a990ea5f90aa
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
 PODFILE CHECKSUM: 8a493d4d7789b8812e5d652f6aa8c645f8e2ee00
 

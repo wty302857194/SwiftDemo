@@ -12,6 +12,9 @@
 		C105467C2249FEC9000FF552 /* TYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105467B2249FEC9000FF552 /* TYTabBar.swift */; };
 		C10E39B3224DCA74002F29D8 /* TYMineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10E39B1224DCA74002F29D8 /* TYMineTableViewCell.swift */; };
 		C10E39B4224DCA74002F29D8 /* TYMineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C10E39B2224DCA74002F29D8 /* TYMineTableViewCell.xib */; };
+		C12940AB225498A600682A7F /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12940A9225498A600682A7F /* NoLoginHeaderView.xib */; };
+		C12940AC225498A600682A7F /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12940AA225498A600682A7F /* NoLoginHeaderView.swift */; };
+		C12940AE2254994C00682A7F /* MyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12940AD2254994C00682A7F /* MyTheme.swift */; };
 		C14AF57A2250FF9200C33FEC /* TYNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14AF5782250FF9200C33FEC /* TYNetworkTool.swift */; };
 		C14AF57B2250FF9200C33FEC /* TYNetBaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14AF5792250FF9200C33FEC /* TYNetBaseUrl.swift */; };
 		C14AF57D2251025A00C33FEC /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14AF57C2251025A00C33FEC /* NetWorkTool.swift */; };
@@ -24,7 +27,6 @@
 		C14AF5A7225204CC00C33FEC /* TYMyConcernCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14AF5A5225204CC00C33FEC /* TYMyConcernCollectionViewCell.xib */; };
 		C14AF5A9225304BF00C33FEC /* TYNoLogInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14AF5A8225304BF00C33FEC /* TYNoLogInHeaderView.swift */; };
 		C14AF5AB225304CF00C33FEC /* TYNoLogInHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14AF5AA225304CF00C33FEC /* TYNoLogInHeaderView.xib */; };
-		C14AF5AD225357A200C33FEC /* TYMyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14AF5AC225357A200C33FEC /* TYMyTheme.swift */; };
 		C14AF5B122535C3C00C33FEC /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = C14AF5AF22535C3C00C33FEC /* default_theme.plist */; };
 		C14AF5B222535C3C00C33FEC /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = C14AF5B022535C3C00C33FEC /* night_theme.plist */; };
 		C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE6CB02248BE8D008B3C57 /* AppDelegate.swift */; };
@@ -65,6 +67,9 @@
 		C105467B2249FEC9000FF552 /* TYTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYTabBar.swift; sourceTree = "<group>"; };
 		C10E39B1224DCA74002F29D8 /* TYMineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYMineTableViewCell.swift; sourceTree = "<group>"; };
 		C10E39B2224DCA74002F29D8 /* TYMineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TYMineTableViewCell.xib; sourceTree = "<group>"; };
+		C12940A9225498A600682A7F /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
+		C12940AA225498A600682A7F /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
+		C12940AD2254994C00682A7F /* MyTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTheme.swift; sourceTree = "<group>"; };
 		C14AF5782250FF9200C33FEC /* TYNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYNetworkTool.swift; sourceTree = "<group>"; };
 		C14AF5792250FF9200C33FEC /* TYNetBaseUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYNetBaseUrl.swift; sourceTree = "<group>"; };
 		C14AF57C2251025A00C33FEC /* NetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
@@ -81,7 +86,6 @@
 		C14AF5A5225204CC00C33FEC /* TYMyConcernCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TYMyConcernCollectionViewCell.xib; sourceTree = "<group>"; };
 		C14AF5A8225304BF00C33FEC /* TYNoLogInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYNoLogInHeaderView.swift; sourceTree = "<group>"; };
 		C14AF5AA225304CF00C33FEC /* TYNoLogInHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TYNoLogInHeaderView.xib; sourceTree = "<group>"; };
-		C14AF5AC225357A200C33FEC /* TYMyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYMyTheme.swift; sourceTree = "<group>"; };
 		C14AF5AF22535C3C00C33FEC /* default_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_theme.plist; sourceTree = "<group>"; };
 		C14AF5B022535C3C00C33FEC /* night_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night_theme.plist; sourceTree = "<group>"; };
 		C1FE6CAD2248BE8D008B3C57 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -300,6 +304,8 @@
 				C14AF5812251E1F900C33FEC /* TYFirstSectionTableViewCell.xib */,
 				C14AF5A4225204CC00C33FEC /* TYMyConcernCollectionViewCell.swift */,
 				C14AF5A5225204CC00C33FEC /* TYMyConcernCollectionViewCell.xib */,
+				C12940AA225498A600682A7F /* NoLoginHeaderView.swift */,
+				C12940A9225498A600682A7F /* NoLoginHeaderView.xib */,
 				C14AF5A8225304BF00C33FEC /* TYNoLogInHeaderView.swift */,
 				C14AF5AA225304CF00C33FEC /* TYNoLogInHeaderView.xib */,
 			);
@@ -367,7 +373,7 @@
 				C14AF5792250FF9200C33FEC /* TYNetBaseUrl.swift */,
 				C14AF5782250FF9200C33FEC /* TYNetworkTool.swift */,
 				E2688A8F82E484B5F76E5BB7 /* TYMyScrollView.swift */,
-				C14AF5AC225357A200C33FEC /* TYMyTheme.swift */,
+				C12940AD2254994C00682A7F /* MyTheme.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -534,6 +540,7 @@
 				C10E39B4224DCA74002F29D8 /* TYMineTableViewCell.xib in Resources */,
 				C14AF5B122535C3C00C33FEC /* default_theme.plist in Resources */,
 				C14AF5B222535C3C00C33FEC /* night_theme.plist in Resources */,
+				C12940AB225498A600682A7F /* NoLoginHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,19 +638,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12940AE2254994C00682A7F /* MyTheme.swift in Sources */,
 				C105467C2249FEC9000FF552 /* TYTabBar.swift in Sources */,
 				C10E39B3224DCA74002F29D8 /* TYMineTableViewCell.swift in Sources */,
 				C1FE6CC72248C6BB008B3C57 /* TYNavigationController.swift in Sources */,
 				C1FE6CB12248BE8D008B3C57 /* AppDelegate.swift in Sources */,
 				C14AF57D2251025A00C33FEC /* NetWorkTool.swift in Sources */,
 				C1FE6CC92248C74E008B3C57 /* TYBaseTabBarController.swift in Sources */,
+				C12940AC225498A600682A7F /* NoLoginHeaderView.swift in Sources */,
 				C101FB19224A220C00AEDB3E /* Const.swift in Sources */,
 				C14AF5822251E1F900C33FEC /* TYFirstSectionTableViewCell.swift in Sources */,
 				E26884132C797B6EFD58B94F /* TYMineViewController.swift in Sources */,
 				E26887266A9346B5BA2A0444 /* MineModel.swift in Sources */,
 				C14AF57A2250FF9200C33FEC /* TYNetworkTool.swift in Sources */,
 				E2688D91898000DD419D4501 /* TYHuoshanViewController.swift in Sources */,
-				C14AF5AD225357A200C33FEC /* TYMyTheme.swift in Sources */,
 				C14AF5852251E52400C33FEC /* UIView+Extension.swift in Sources */,
 				E2688310CC3DED8EB7237BD7 /* TYHomeViewController.swift in Sources */,
 				E2688A5573B2C246442CBD6C /* TYVideoViewController.swift in Sources */,
